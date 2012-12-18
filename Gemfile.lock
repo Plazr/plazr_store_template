@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:Plazr/plazr_auth.git
-  revision: 1cd05970bb9ea345ee53cfad2382763fd53680f6
+  revision: 05d1b3beae33da21f93ce975b771356bf17cc5b3
   specs:
     plazr_auth (0.0.1)
       cancan (>= 1.6.8)
