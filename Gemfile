@@ -9,6 +9,9 @@ gem 'sqlite3'
 
 gem 'plazr_store', :git => 'git@github.com:Plazr/plazr_store.git'
 gem 'plazr_auth', :git =>  'git@github.com:Plazr/plazr_auth.git'
+#gem 'plazr_store', :git => 'https://github.com/Plazr/plazr_store.git'
+#gem 'plazr_auth', :git =>  'https://github.com/Plazr/plazr_auth.git'
+
 
 gem 'pry'
 
