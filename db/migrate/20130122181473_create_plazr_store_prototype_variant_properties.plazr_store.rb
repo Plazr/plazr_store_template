@@ -1,5 +1,5 @@
 # This migration comes from plazr_store (originally 20121128122638)
-class PrototypeVariantProperties < ActiveRecord::Migration
+class CreatePlazrStorePrototypeVariantProperties < ActiveRecord::Migration
   def change
     create_table :plazr_store_prototype_variant_properties do |t|
     t.references :prototype, :null => false

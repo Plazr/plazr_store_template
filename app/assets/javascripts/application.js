@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require plazr_store
 //= require_tree .

@@ -1,5 +1,5 @@
 # This migration comes from plazr_store (originally 20121128122328)
-class PropertyPrototypes < ActiveRecord::Migration
+class CreatePlazrStorePropertyPrototypes < ActiveRecord::Migration
   def change
     create_table :plazr_store_property_prototypes do |t|
     t.references :property, :null => false
