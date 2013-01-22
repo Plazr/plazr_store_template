@@ -1,5 +1,6 @@
 Project::Application.routes.draw do
 
-	mount PlazrStore::Engine => '/'
+  mount PlazrAuth::Engine  => '/'
+  mount PlazrStore::Engine => '/'
 
 end
