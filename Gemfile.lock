@@ -20,8 +20,9 @@ GIT
       uuidtools (>= 2.1.2)
       uuidtools (>= 2.1.2)
 
-PATH
-  remote: ../../../plazr_store
+GIT
+  remote: git@github.com:Plazr/plazr_store.git
+  revision: 352ddda8ba730891314a88cd66949d2f88522485
   specs:
     plazr_store (0.0.1)
       activemerchant
