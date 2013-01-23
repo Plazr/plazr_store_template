@@ -5,7 +5,7 @@ namespace :store do
   
     path = File.expand_path '../../',__FILE__
     
-    if !File.exist?("#{path}/store.yml") 
+    #if !File.exist?("#{path}/store.yml") 
       details = "store_id: #{args.store_id}\n" <<
                 "name: #{args.name}\n" <<
                 "description: #{args.description}\n" << 
@@ -16,6 +16,6 @@ namespace :store do
       file = File.new("#{path}/store.yml", "w")
       file.write(details)
       file.close
-    end
+    #end
   end
 end
