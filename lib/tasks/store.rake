@@ -1,6 +1,28 @@
 #!/bin/env ruby
 # encoding: utf-8
 
+namespace :store do 
+  
+  desc "Save the store details to the store yml file"  
+  task :create_yml, [:store_id, :name, :description, :email, :phone, :url] => :environment do |t, args|
+  
+    path = File.expand_path '../../',__FILE__
+    
+    #if !File.exist?("#{path}/store.yml") 
+      details = "store_id: #{args.store_id}\n" <<
+                "name: #{args.name}\n" <<
+                "description: #{args.description}\n" << 
+                "email: #{args.email}\n" << 
+                "phone: #{args.phone}\n" <<
+                "url: #{args.url}\n"
+      
+      file = File.new("#{path}/store.yml", "w")
+      file.write(details)
+      file.close
+    #end
+  end
+end
+
 namespace :db do
   desc "Erase and fill database"
   task :store => :environment do
@@ -261,6 +283,5 @@ namespace :db do
     add_product "Cotoveleira", "", "Proteção Desportiva", 15.98
     add_product "Pulso", "", "Proteção Desportiva", 14.20
     add_product "Suporte Cotovelo TÉN", "", "Proteção Desportiva", 14.20
-
   end
 end
