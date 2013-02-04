@@ -20,8 +20,9 @@ GIT
       uuidtools (>= 2.1.2)
       uuidtools (>= 2.1.2)
 
-PATH
-  remote: ../../../plazr_store
+GIT
+  remote: git@github.com:Plazr/plazr_store.git
+  revision: 426c51e8d67330debc406a5f18d54f26d5035db7
   specs:
     plazr_store (0.0.1)
       activemerchant
@@ -41,8 +42,10 @@ PATH
       rb-readline
       redactor-rails
       sass-rails
+      sprockets
       turbolinks
       will_paginate (~> 3.0.0)
+      will_paginate-bootstrap
 
 GEM
   remote: https://rubygems.org/
@@ -133,7 +136,7 @@ GEM
       railties (>= 3.0.0)
     faraday (0.8.4)
       multipart-post (~> 1.1)
-    fssm (0.2.9)
+    fssm (0.2.10)
     haml (3.1.7)
     hashie (1.2.0)
     hike (1.2.1)
@@ -279,6 +282,8 @@ GEM
     warden (1.2.1)
       rack (>= 1.0)
     will_paginate (3.0.4)
+    will_paginate-bootstrap (0.2.2)
+      will_paginate (>= 3.0.3)
 
 PLATFORMS
   ruby
